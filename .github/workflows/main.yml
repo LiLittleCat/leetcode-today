@@ -41,5 +41,7 @@ jobs:
         env: 
           send_username: ${{ secrets.SEND_USERNAME }}
           send_authroization: ${{ secrets.SEND_AUTHROIZATION }} 
+          receive_user_1: ${{ secrets.RECEIVE_USER_1 }}
+          receive_user_2: ${{ secrets.RECEIVE_USER_2 }}
         run:
           python leetcode-today.py
