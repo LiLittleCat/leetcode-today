@@ -78,6 +78,8 @@ htmlText = """ <head>
 # 获取 GitHub workflow 的变量
 send_username = os.environ["send_username"]
 send_authroization = os.environ["send_authroization"]
+receive_user_1 = os.environ["receive_user_1"]
+receive_user_2 = os.environ["receive_user_2"]
 # 邮箱类
 class Email:
     def __init__(self, sender_name, sender_address, email_host, email_port, authroization, receive_user_list, title, message):
@@ -117,7 +119,7 @@ if __name__ == '__main__':
     # SMTP 授权
     authroization = send_authroization
     # 收件人邮箱账户列表
-    receive_user_list = ["lilittlecat@qq.com"]
+    receive_user_list = [receive_user_1, receive_user_2]
     # 邮件标题
     title = question_frontend_id + '.' + question_name_chinese + '.' + question_difficulty
     message = htmlText
