@@ -67,7 +67,6 @@ htmlText = """ <head>
     </head>
     <body>
 <div>
-    <h2>Leetcode-每日一题</h2>
     """ + question_content + '本题连接：<a href=' + url + ">" + url + "</a></div>"+ """<div>
 <p>
 <strong>Java 答案：</strong>
